@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="myH"></h2>
+    <script>
+      const theH = document.getElementById("myH");
+      const today = new Date(); //取得程式執行的日期和時間
+      console.log(today);
+      const theDay = today.getDate(); //取得星期，0-6為週日到週六
+      let aDay = "";
+
+      switch (theDay) {
+        case 0:
+          aDay = "日";
+          break;
+        case 1:
+          aDay = "一";
+          break;
+        case 2:
+          aDay = "二";
+          break;
+        case 3:
+          aDay = "三";
+          break;
+        case 4:
+          aDay = "四";
+          break;
+        case 5:
+          aDay = "五";
+          break;
+        case 6:
+          aDay = "六";
+          break;
+        default:
+          aDay = "不知道";
+      }
+
+      theH.textContent = `今天是星期 ${aDay}`;
+    </script>
+  </body>
+</html>

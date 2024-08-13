@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script標籤習慣放置於最後body的前一區塊 -->
+    <script>
+        // 第一種寫法，直接內嵌
+        // JS 要寫在 <script> 標籤裡面
+        // Js 習慣在後面加上分號;
+        // window.alert("Hello JavaScript");
+        // console.log("Hello JS!!");
+        // document.write("Hello document!!!");
+        // document.getElementById("myH").textContent = "hello document";
+        const theDiv = document.getElementById("myDiv");
+        // theDiv.innerText = "Hello Word!!!"
+        myDiv.innerHTML = "<h2>Hello Word!!!<h2>"
+
+
+            // 輸入
+            const name = window.prompt("請輸入姓名：");
+            // 輸出
+            console.log(name);
+    </script>
+
+    <!-- 第二種寫法：外部引入 -->
+    <script src="/JS/site.js"></script>
+</body>
+</html>

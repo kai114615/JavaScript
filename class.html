@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 設定html輸入方框 -->
+    <label>請輸入半徑：<input type="number" id="inputRad"> </label>
+    <div id="div1"></div>
+
+
+    <script>
+        // 找到要控制的元素
+        const inputRad = document.getElementById("inputRad");
+        const div1 = document.getElementById("div1");
+
+
+        // 要計算圓周率
+        inputRad.addEventListener("blur", function(){
+            const PI = 3.141592653589793238;
+            let r = inputRad.value;  //半徑
+            div1.textContent = `圓周長：${2 * PI * r}`;
+        })
+    </script>
+</body>
+</html>
